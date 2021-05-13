@@ -15,3 +15,4 @@ else
 fi
 
 echo "\nsource \"\$HOME/Development/dotfiles/.aliases\" " >> "$HOME/.zshrc"
+echo "\nsource \"\$HOME/Development/dotfiles/.extra\" " >> "$HOME/.zshrc"
