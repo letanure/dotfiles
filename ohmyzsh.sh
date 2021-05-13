@@ -13,3 +13,5 @@ if test ! $(which zsh); then
 else
 		log_warning "ohmyzsh already instaled"
 fi
+
+echo "\nsource \"\$HOME/Development/dotfiles/.aliases\" " >> "$HOME/.zshrc"
