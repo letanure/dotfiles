@@ -26,14 +26,18 @@ fi
 # Brew apps 
 log_info1 "Installing apps with brew"
 brewApps=(
-	# "rbenv"
-	# "brew install imagemagick --with-webp"
-	"git"
-	"zsh"
-	# "moreutils" # Collection of tools that nobody wrote when UNIX was young
-	# "hub" # extends git
+	"git" # Distributed revision control system
+	"zsh" # UNIX shell (command interpreter)
 	# "ack" # better grep
+	# "brew install imagemagick --with-webp"
 	# "fzf" # command-line fuzzy finder
+	# "gh" # GitHub command-line tool
+	# "hub" # extends git
+	# "moreutils" # Collection of tools that nobody wrote when UNIX was young
+	# "rbenv"
+	# "watch" # Executes a program periodically, showing output fullscreen
+	# "yarn" # JavaScript package manager
+	# "youtube-dl" # Download YouTube videos from the command-line
 )
 for app in "${brewApps[@]}"
 do
