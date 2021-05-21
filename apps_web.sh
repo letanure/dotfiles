@@ -36,7 +36,3 @@ do
 	mas install "$app"
 done
 
-
-
-
-osascript -e 'tell application "spotfy" to play'
