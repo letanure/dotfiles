@@ -22,22 +22,69 @@ fi
 # Remove outdated versions from the cellar.
 # brew cleanup
 
-
-# Brew apps 
+# Brew apps
 log_info1 "Installing apps with brew"
 brewApps=(
+	"ack" # better grep
+	"gh" # GitHub command-line tool
 	"git" # Distributed revision control system
-	"zsh" # UNIX shell (command interpreter)
-	# "ack" # better grep
+	"htop" # Improved top (interactive process viewer)
+	"hub" # extends git
+	"jq" # Lightweight and flexible command-line JSON processor
+	"mas" # Mac App Store command-line interface
+	"rename" # Perl-powered file rename script with many helpful built-ins
+	# "taskwarrior-tui" # Terminal user interface for taskwarrior
+	"thefuck" # Programatically correct mistyped console commands
+	"tldr" # Simplified and community-driven man pages
+	"unity-hub" # Management tool for Unity
+	"wget" # Internet file retriever
+	"yarn" # JavaScript package manager
+	"you-get" # Dumb downloader that scrapes the web
+	# "ansible" # Automate deployment, configuration, and upgrading
+	# "awscli" # Official Amazon AWS command-line interface
+	# "boot2docker" # Lightweight Linux for Docker
 	# "brew install imagemagick --with-webp"
+	# "certbot" # Tool to obtain certs from Lets Encrypt and autoenable HTTPS
+	# "couchdb" # Document database server
+	# "cowsay" # Configurable talking characters in ASCII art
+	# "docker-compose" # Isolated development environments using Docker
+	# "docker-machine" # Create Docker hosts locally and on cloud providers
+	# "docker" # Pack, ship and run any application as a lightweight container
+	# "doxygen" # Generate documentation for several programming languages
+	# "exercism" # Command-line tool to interact with exercism.io
+	# "fswatch" # Monitor a directory for changes and run a shell command
 	# "fzf" # command-line fuzzy finder
-	# "gh" # GitHub command-line tool
-	# "hub" # extends git
+	# "gist" # Command-line utility for uploading Gists
+	# "git-flow" # Extensions to follow Vincent Driessens branching model
+	# "heroku" # Command-line client for the cloud PaaS
+	# "highlight" # Convert source code to formatted text with syntax highlighting
+	# "httrack" # Website copier/offline browser
+	# "hugo" # Configurable static site generator
+	# "kubernetes-cli" # Kubernetes command-line interface
+	# "libpng" # Library for manipulating PNG images
+	# "markdown" # Text-to-HTML conversion tool
+	# "mongodb" # High-performance, schema-free, document-oriented database
 	# "moreutils" # Collection of tools that nobody wrote when UNIX was young
-	# "rbenv"
+	# "nano" # Free (GNU) replacement for the Pico text editor
+	# "pandoc" # Swiss-army knife of markup format conversion
+	# "postgresql" # Object-relational database system
+	# "pyenv" # Python version management
+	# "rbenv" # Ruby version manager
+	# "redis" # Persistent key-value database, with built-in net interface
+	# "rename" # Perl-powered file rename script with many helpful built-ins
+	# "shellcheck" # Static analysis and lint tool, for (ba)sh scripts
+	# "sqlite" # Command-line interface for SQLite
+	# "terminal-notifier" # Send macOS User Notifications from the command-line
+	# "terraform" # Tool to build, change, and version infrastructure
+	# "transmission" # Lightweight BitTorrent client
+	# "vault" # Secures, stores, and tightly controls access to secrets
 	# "watch" # Executes a program periodically, showing output fullscreen
-	# "yarn" # JavaScript package manager
+	# "webp" # Image format providing lossless and lossy compression for web images
 	# "youtube-dl" # Download YouTube videos from the command-line
+	# "z" # Tracks most-used directories to make cd smarter
+	# "zsh-completions" # Additional completion definitions for zsh
+	# "zsh-syntax-highlighting" # Fish shell like syntax highlighting for zsh
+	# "zsh" # UNIX shell (command interpreter)
 )
 for app in "${brewApps[@]}"
 do
@@ -51,7 +98,7 @@ do
 	fi
 done
 
-# Brew cask apps 
+# Brew cask apps
 log_info1 "Installing cask apps with brew"
 brewCask=(
 	"bitwarden" # Desktop password and login vault
@@ -65,16 +112,16 @@ brewCask=(
 	"mysides" # sidebar finder management
 	"rectangle" # Move and resize windows using keyboard shortcuts or snap areas
 	"spotify" # Music streaming service
-	"the-unarchiver" # Unpacks archive files .rar 
+	"the-unarchiver" # Unpacks archive files .rar
 	"tiled" # Flexible level editor
 	"visual-studio-code" # Open-source code editor
 	"zoom" # Video communication and virtual meeting platform
 	"google-drive" # Client for the Google Drive storage service
 	# "google-backup-and-sync" # Google Backup and Sync
-	# "collabshot" # Real-time screen-grabs, image sharing, and collaboration 
+	# "collabshot" # Real-time screen-grabs, image sharing, and collaboration
 	# "dropbox" # Client for the Dropbox cloud storage service
-	# "flux" # Screen color temperature controller 
-	# "handbrake" # Open-source video transcoder 
+	# "flux" # Screen color temperature controller
+	# "handbrake" # Open-source video transcoder
 	# "imagealpha" # Utility to reduce the size of 24-bit PNG files
 	# "kaleidoscope" # Spot and merge differences in text and image files or folders
 	# "nova" # Native code editor

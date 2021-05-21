@@ -39,3 +39,30 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# htop requires root privileges to correctly display all running processes
+# alias htops='sudo htop'
+
+# To have launchd start redis now and restart at login:
+# brew services start redis
+# Or, if you don't want/need a background service you can just run:
+alias redis_start='redis-server /usr/local/etc/redis.conf'
+
+# eval $(thefuck --alias)
+
+# Add the following to your .bash_profile, .bashrc or .zshrc:
+autoload -Uz compinit
+compinit
+
+# To use post-processing options, run `brew install ffmpeg` or `brew install libav`.
+
+# To activate these completions, add the following to your .zshrc:
+#   autoload -Uz compinit
+#   compinit
+# You may also need to force rebuild `zcompdump`:
+#   rm -f ~/.zcompdump; compinit
+# Additionally, if you receive "zsh compinit: insecure directories" warnings when attempting
+# to load these completions, you may need to run this:
+#   chmod -R go-w '/usr/local/share/zsh'
+# zsh completions have been installed to:
+#   /usr/local/share/zsh/site-functions

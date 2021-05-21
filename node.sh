@@ -21,6 +21,12 @@ else
 		log_warning "already exists on ~/.zshrc"
 fi
 
+# npm config ls -l
+# npm config set init-author-name "Luiz Tanure" -g
+# npm config set init-author-email "letanure@gmail.com" -g
+# npm config set init-version "0.0.0" -g
+# npm config set init-author-url "https://github.com/letanure/" -g
+
 # export NVM_DIR=$HOME/.nvm;
 # source $NVM_DIR/nvm.sh;
 # nvm install --lts

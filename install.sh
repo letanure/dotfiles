@@ -1,13 +1,23 @@
 #!/bin/bash
 
-source colors.sh
+DIRECTORY_DEVELOPMENT="$HOME/Development"
+DOTFILES="/$DIRECTORY_DEVELOPMENT/dotfiles"
 
-source apps_brew.sh
+echo "Create Development to sidebar"
+if [ ! -d "${DIRECTORY_DEVELOPMENT}" ]; then
+	echo "Creating the development directory"
+	mkdir -p "${DIRECTORY_DEVELOPMENT}";
+else
+	echo "already exists"
+fi
 
-source apps_web.sh
+if [[ -d $DOTFILES ]]; then
+    echo 'Checking dotfiles directory'
+else
+    echo 'Cloning dotfiles'
+    git clone https://github.com/letanure/dotfiles.git $DOTFILES
+fi
 
-source mac_settings.sh
+cd $DOTFILES
 
-source ohmyzsh.sh
-
-source node.sh
+source start.sh
